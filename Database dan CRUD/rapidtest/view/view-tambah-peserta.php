@@ -8,7 +8,7 @@
 <h1>Formulir Pendaftaran Rapid Test</h1>
 <form action="tambah.php" method="post">
     Email: <input type="email" name="email"><br>
-    Nama: <input type="nama" name="nama"><br>
+    Nama: <input type="text" name="nama"><br>
     <input type="submit" value="Daftar">
 </form> 
 </body>

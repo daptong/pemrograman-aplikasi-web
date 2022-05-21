@@ -2,7 +2,7 @@
     require("../connector.php");
     session_start();
 
-    include("customer-check-login.php");
+    include("../customer/customer-check-login.php");
 
     $profile_username = $_SESSION['username'];
     $profile_id = $_SESSION['pelanggan_id'];
@@ -29,11 +29,14 @@
     }
 
     $in = '(' . implode(',', $id) .')';
- 
-    $sql3 = "SELECT status, transaksi_id FROM status_laundry WHERE transaksi_id IN" . $in;
-    $stmt3 = $db->query($sql3);
-    // $temp3 = $stmt3->fetch(PDO::FETCH_ASSOC);
-    
+
+    if(sizeof($id) == 0){
+        error_reporting(0);
+    }
+    else{
+        $sql3 = "SELECT status, transaksi_id FROM status_laundry WHERE transaksi_id IN" . $in;
+        $stmt3 = $db->query($sql3);
+    }
 ?>
 
 <!DOCTYPE html>

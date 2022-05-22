@@ -11,6 +11,7 @@
 
     $saved = $stmt->execute();
 
-    $msg = "Changes saved.";
-    echo $msg;
+    if($saved){
+        echo "Changes saved.";
+    }
 ?>

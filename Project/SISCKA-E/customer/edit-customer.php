@@ -21,7 +21,7 @@
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if($saved){
-            header("Location: customer-order.php");
+            header("Location: customer-home.php");
         }
         else{
         }

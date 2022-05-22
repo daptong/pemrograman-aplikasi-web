@@ -15,11 +15,11 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "test-admin-helper-change-driver-packet.php",
+            url: "admin-helper-change-driver-packet.php",
             data: items,
             success: function(data){
                 alert(data);
-                location.href = "test-admin-check-laundry.php";
+                location.href = "admin-check-laundry.php";
             }
         });
     });

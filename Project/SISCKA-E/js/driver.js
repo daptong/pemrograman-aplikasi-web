@@ -20,7 +20,13 @@ $(document).ready(function(){
             success: function(data){
                 alert(data);
                 location.href = "admin-check-laundry.php";
-            }
+		        window.location.reload();
+            },
+	        error: function(data){
+	    	    alert(data;
+		        location.href = "admin-check-laundry.php";
+		        window.location.reload();
+	        }
         });
     });
 });

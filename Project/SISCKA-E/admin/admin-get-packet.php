@@ -37,7 +37,11 @@
         </td>
         <td><select name="assign_driver" id="assign_driver">
                 <option value="">Select Driver</option>
-                <?php include("admin-helper-get-driver.php") ?>
+                <option value="Agus Joko Susilo">Agus Joko Susilo</option>
+                <option value="Ahmad Naufal">Ahmad Naufal</option>
+                <option value="Edwin Nurdiansyah">Edwin Nurdiansyah</option>
+                <option value="Freddy Yohanes Patty">Freddy Yohanes Patty</option>
+                <option value="Samuel Anderson">Samuel Anderson</option>
             </select>
         </td>
         <td><button class="changeStateDriver">Change</button></td>
